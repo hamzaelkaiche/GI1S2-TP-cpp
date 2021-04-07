@@ -151,7 +151,7 @@ SetEntiers_ListeChainee::SetEntiers_ListeChainee(const SetEntiers_ListeChainee &
     nbrelem = s.nbrelem;
     max = s.max;
     premier = new Element(s.premier->valeur);
-    for (Element *e = s.premier->suivant, *t; e; e = e->suivant, t = t->suivant) {
+    for (Element *e = s.premier->suivant, *t = premier; e; e = e->suivant, t = t->suivant) {
         t->suivant = new Element(e->valeur);
     }
 }
