@@ -55,6 +55,9 @@ String::~String() {
 }
 
 String &String::operator=(const String &s) {
+    if (taille != 0) {
+        delete [] chaine;
+    }
     taille = s.taille;
     chaine = new char[taille + 1];
     strcpy(chaine, s.chaine);
