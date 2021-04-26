@@ -17,6 +17,7 @@ public:
     int NombreHeuresTotale();
     void Afficher();
     Appreciation CreerAppreciation(std::string nom_etudiant, std::string commentaire);
+    void AfficherAppreciation(Appreciation appreciation);
 
 private:
     std::vector<std::string> matieres;

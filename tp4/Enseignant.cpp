@@ -38,3 +38,7 @@ Appreciation Enseignant::CreerAppreciation(std::string nom_etudiant, std::string
     appreciation.commentaire = commentaire;
     return appreciation;
 }
+
+void Enseignant::AfficherAppreciation(Appreciation appreciation) {
+    cout << "{enseignant: '" << appreciation.nom_enseignant << "', etudiant: '" << appreciation.nom_etudiant << "', commentaire: '" << appreciation.commentaire << "'}\n";
+}

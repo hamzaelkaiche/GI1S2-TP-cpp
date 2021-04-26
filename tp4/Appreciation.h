@@ -9,13 +9,12 @@
 #include <string>
 
 class Appreciation {
-public:
-    void Afficher();
-
 private:
     std::string nom_enseignant;
     std::string nom_etudiant;
     std::string commentaire;
+
+    void Afficher();
 
     friend class Enseignant;
 };

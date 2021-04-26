@@ -33,5 +33,5 @@ int main() {
 
 // C
     Appreciation appreciation = enseignant.CreerAppreciation("nomEtudiant", "un commentaire");
-    appreciation.Afficher();
+    enseignant.AfficherAppreciation(appreciation);
 }
